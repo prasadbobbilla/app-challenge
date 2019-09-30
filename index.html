@@ -1,0 +1,90 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <title>Average Number of Students Per Section</title>
+
+  <meta name="description" content="Average">
+  <meta name="author" content="SaiPrasad Bobbilla">
+
+  <!-- get current Bootstrap Material Design styles from https://mdbootstrap.com/md-bootstrap-cdn/ -->
+
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css">
+  <!-- Bootstrap core CSS -->
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.3.1/css/bootstrap.min.css" rel="stylesheet">
+  <!-- Material Design Bootstrap -->
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/mdbootstrap/4.8.7/css/mdb.min.css" rel="stylesheet">
+
+  <!-- required for sticky footer -->
+  <style>
+    body,
+    .sticky-footer-wrapper {
+      min-height: 100vh;
+    }
+  </style>
+
+</head>
+<center>
+<body class="d-flex flex-column sticky-footer-wrapper">
+  <!-- Bootstrap container or container-fluid (whole width) -->
+  <!-- https://getbootstrap.com/docs/4.0/layout/overview/ -->
+  <!-- margin top 5 ($spacer * 3) -->
+  <main class="container mt-5 flex-fill">
+
+    <!--Container has rows - first row -->
+    <div class="row">
+
+      <!--Rows have columns - column 1 (7/12) -->
+      <div class="col-md-7 mb-4">
+
+        <h2>Average of Numbers</h2>
+        <hr>
+
+        <fieldset class="mt-4">
+          <label for="students">Enter Number of Students (1 to 100000):</label>
+          <input id="students" type="number" min="1" max="100000" value="" placeholder="0">
+          <span id="firstWarning" class="text-danger"></span>
+        </fieldset>
+
+        <fieldset class="mt-4">
+          <label for="sections">Enter Number of Sections (1 to 10000):</label>
+          <input id="sections" type="number" min="1" max="10000" value="" placeholder="0">
+          <span id="secondWarning" class="text-danger"></span>
+        </fieldset>
+
+        
+
+        <fieldset class="mt-4">
+          <label for="average">Number of Students Per Section</label>
+          <input id="average" type="number" min="1" max="10000" value="" placeholder="0.00" size="4">
+          <span id="average" class="text-danger"></span>
+        </fieldset>
+
+        <button id="addButton" class="btn btn-primary">Calculate Average</button>
+
+      </div>
+      <!--end column 1-->
+
+    </div>
+    <!-- end row 1 -->
+
+  </main>
+</center>
+  <!-- sticky footer with padding on y-axis (top and bottom) -->
+  <footer class="footer mt-auto py-3 bg-light">
+    &COPY; SaiPrasad Bobbilla
+  </footer>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.4/umd/popper.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.3.1/js/bootstrap.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/mdbootstrap/4.8.7/js/mdb.min.js"></script>
+  <script src="main.js"></script>
+
+</body>
+
+</html>
